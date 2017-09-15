@@ -1,0 +1,294 @@
+{
+  "v": {
+    "nome": "Velocidade",
+    "mascara": "v"
+  },
+  "v0": {
+    "nome": "Velocidade Inicial",
+    "mascara": "v0"
+  },
+  "ds": {
+    "nome": "Variacao da Distancia",
+    "mascara": "Δs"
+  },
+  "dt": {
+    "nome": "Variacao do Tempo",
+    "mascara": "Δt"
+  },
+  "dv": {
+    "nome": "Variacao da Velocidade",
+    "mascara": "Δv"
+  },
+  "dh": {
+    "nome": "Variacao da Altura",
+    "mascara": "Δh"
+  },
+  "s": {
+    "nome": "Posicao",
+    "mascara": "s"
+  },
+  "s0": {
+    "nome": "Posicao Inicial",
+    "mascara": "s0"
+  },
+  "a": {
+    "nome": "Aceleracao",
+    "mascara": "a"
+  },
+  "h": {
+    "nome": "Altura",
+    "mascara": "h"
+  },
+  "h0": {
+    "nome": "Altura Inicial",
+    "mascara": "h0"
+  },
+  "ag": {
+    "nome": "Angulo Descrito",
+    "mascara": "φ"
+  },
+  "ag0": {
+    "nome": "Angulo Descrito Inicial",
+    "mascara": "φ0"
+  },
+  "S": {
+    "nome": "Arco do Circulo",
+    "mascara": "S"
+  },
+  "r": {
+    "nome": "Raio do Circulo",
+    "mascara": "r"
+  },
+  "dag": {
+    "nome": "Deslocamento Angular",
+    "mascara": "Δφ"
+  },
+  "dS": {
+    "nome": "Variacao da Posicao do Arco",
+    "mascara": "ΔS"
+  },
+
+  "va": {
+    "nome": "Velocidade Angular",
+    "mascara": "ω"
+  },
+
+  "t": {
+    "nome": "Tempo",
+    "mascara": "t"
+  },
+
+  "aa": {
+    "nome": "Aceleracao Angular",
+    "mascara": "α"
+  },
+
+  "dvg": {
+    "nome": "Variacao da velocidade angular",
+    "mascara": "Δω"
+  },
+
+  "va0": {
+    "nome": "Velocidade angular inicial",
+    "mascara": "ω0"
+  },
+
+  "acp": {
+    "nome": "Aceleracao centripeta",
+    "mascara": "ac"
+  },
+
+  "dl": {
+    "nome": "Variacao de comprimento",
+    "mascara": "Δd"
+  },
+
+  "l0": {
+    "nome": "Comprimento inicial",
+    "mascara": "l0"
+  },
+
+  "cdl": {
+    "nome": "Coeficiente de dilatacao linear",
+    "mascara": "α"
+  },
+
+  "dT": {
+    "nome": "Variacao de temperatura",
+    "mascara": "ΔT"
+  },
+
+  "dar": {
+    "nome": "Variacao da area ",
+    "mascara": "ΔA"
+  },
+
+  "ar0": {
+    "nome": "Area inicial",
+    "mascara": "A0"
+  },
+
+  "B": {
+    "nome": "Coeficiente de dilatacao superficial",
+    "mascara": "β"
+  },
+
+  "dV": {
+    "nome": "Variacao de volume",
+    "mascara": "ΔV"
+  },
+
+  "V0": {
+    "nome": "Volume inicial",
+    "mascara": "V0"
+  },
+
+  "y": {
+    "nome": "Coeficiente de dilatacao volumetrica",
+    "mascara": "ω"
+  },
+
+  "dvap": {
+    "nome": "Variacao do volume aparente",
+    "mascara": "ω"
+  },
+
+  "yl": {
+    "nome": "Coeficiente de dilatacao volumentrica do liquido",
+    "mascara": "ω"
+  },
+
+  "dvre": {
+    "nome": "Variacao do volume do recipiente",
+    "mascara": "ω"
+  },
+
+  "yrec": {
+    "nome": "Coeficiente de dilatacao volumetrico do recipiente",
+    "mascara": "ω"
+  },
+
+  "dvreal": {
+    "nome": "Variacao real do volume",
+    "mascara": "ω"
+  },
+
+  "yreal": {
+    "nome": "Coeficiente de dilatacao volumetrico real ",
+    "mascara": "ω"
+  },
+
+  "C": {
+    "nome": "concentracao comum",
+    "mascara": "C"
+  },
+
+  "m1": {
+    "nome": "Massa do soluto",
+    "mascara": "m1"
+  },
+
+  "V": {
+    "nome": "Volume",
+    "mascara": "V"
+  },
+
+  "n1": {
+    "nome": "numero de mols do soluto",
+    "mascara": "n1"
+  },
+
+
+  "n": {
+    "nome": "numero de mols da Solucao",
+    "mascara": "n"
+  },
+
+
+  "x1": {
+    "nome": "Fracao Molar do soluto",
+    "mascara": "x1"
+  },
+
+  "d": {
+    "nome": "Densidade",
+    "mascara": "d"
+  },
+
+  "mm": {
+    "nome": "Massa Molar",
+    "mascara": "mm"
+  },
+
+  "m": {
+    "nome": "Massa da Solucao",
+    "mascara": "m"
+  },
+
+  "T": {
+    "nome": "Titulo",
+    "mascara": "T"
+  },
+
+  "T%": {
+    "nome": "Titulo Percentual",
+    "mascara": "T%"
+  },
+
+  "C1": {
+    "nome": "concentracao 1",
+    "mascara": "C1"
+  },
+
+  "C2": {
+    "nome": "concentracao 2",
+    "mascara": "C2"
+  },
+
+
+  "C3": {
+    "nome": "concentracao 3",
+    "mascara": "C3"
+  },
+
+
+  "V1": {
+    "nome": "Volume 1",
+    "mascara": "V1"
+  },
+
+  "V2": {
+    "nome": "Volume 2",
+    "mascara": "V2"
+  },
+
+  "M1": {
+    "nome": "Molaridade 1",
+    "mascara": "M1"
+  },
+
+  "M2": {
+    "nome": "Molaridade 2",
+    "mascara": "M2"
+  },
+
+  "M3": {
+    "nome": "Molaridade 3",
+    "mascara": "M3"
+  },
+
+  "A": {
+    "nome": "Massa Atomica",
+    "mascara": "A"
+  },
+
+  "N": {
+    "nome": "Numero de neutrons",
+    "mascara": "N"
+  },
+
+  "Z": {
+    "nome": "Numero de protons",
+    "mascara": "Z"
+  }
+}
