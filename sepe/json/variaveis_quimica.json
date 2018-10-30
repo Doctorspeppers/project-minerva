@@ -1,0 +1,117 @@
+{
+  "C": {
+    "nome": "Concentração Comum",
+    "mascara": "C",
+    "unidade":"Quilo(s) por Litro"
+  },
+  "m1": {
+    "nome": "Massa do Soluto",
+    "mascara": "m1",
+    "unidade":"Quilo(s)"
+  },
+  "m": {
+    "nome": "Massa",
+    "mascara": "m",
+    "unidade":"Quilo(s)"
+  },
+  "τm": {
+    "nome": "Título em Massa",
+    "mascara": "τm",
+    "unidade":""
+  },
+  "τ%m": {
+    "nome": "Título Percentual em Massa",
+    "mascara": "τ%m",
+    "unidade":"%"
+  },
+  "τV": {
+    "nome": "Título em Volume",
+    "mascara": "τV",
+    "unidade":""
+  },
+  "τ%V": {
+    "nome": "Título Percentual em Volume",
+    "mascara": "τ%V",
+    "unidade":"%"
+  },
+  "V1": {
+    "nome": "Volume do Soluto",
+    "mascara": "V1",
+    "unidade":"Litro(s)"
+  },
+  "M": {
+    "nome": "Concentração Molar",
+    "mascara": "M",
+    "unidade":"Quilo(s)"
+  },
+  "n1": {
+    "nome": "Quantidade Molar do Soluto",
+    "mascara": "n1",
+    "unidade":"Mol(es)"
+  },
+  "C": {
+    "nome": "Concentração Comum",
+    "mascara": "C",
+    "unidade":"Quilo(s) por Litro"
+  },
+  "M1": {
+    "nome": "Concentração Molar do Soluto",
+    "mascara": "M1",
+    "unidade":"Mol(es) pol Litro"
+  },
+  "C'": {
+    "nome": "Concentração Comum (') ",
+    "mascara": "C'",
+    "unidade":"Quilo(s) por Litro"
+  },
+  "V'": {
+    "nome": "Volume do Soluto (') ",
+    "mascara": "V'",
+    "unidade":"Litro(s)"
+  },
+  "τm'": {
+    "nome": "Título em Massa (') ",
+    "mascara": "τm'",
+    "unidade":""
+  },
+  "m'": {
+    "nome": "Massa (') ",
+    "mascara": "m'",
+    "unidade":"Quilo(s)"
+  },
+  "M'": {
+    "nome": "Concentração Molar (') ",
+    "mascara": "M'",
+    "unidade":"Mol(es) pol Litro"
+  },
+  "M''": {
+    "nome": "Concentração Molar ('') ",
+    "mascara": "M''",
+    "unidade":"Mol(es) pol Litro"
+  },
+  "V''": {
+    "nome": "Volume do Soluto ('') ",
+    "mascara": "V''",
+    "unidade":"Litro(s)"
+  },
+  "C''": {
+    "nome": "Concentração Comum ('') ",
+    "mascara": "C''",
+    "unidade":"Quilo(s) por Litro"
+  },
+  "A": {
+    "nome": "Massa Atômica ",
+    "mascara": "A",
+    "unidade":""
+  },
+  "N": {
+    "nome": "Número de Neutrons",
+    "mascara": "N",
+    "unidade":"Neutrons"
+  },
+  "Z": {
+    "nome": "Número Atômico",
+    "mascara": "Z",
+    "unidade":"Prótons"
+  }
+}

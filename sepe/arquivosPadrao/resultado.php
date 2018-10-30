@@ -11,10 +11,6 @@
         }
     }
 
-    $formulas =  buscaEquacao("json/".$_SESSION["materia"].".json", $dados);
-
-    $count = count($formulas);
-
     ?>
 <style>
     ul {
@@ -28,31 +24,78 @@
     <div class="col-md-1"></div>
     <div class="col-md-10">
     <?php
-        for ($i = 0; $i < $count; $i++):
-        $resultado = resolveEquacao($formulas[$i]["dados"], $formulas[$i]["formula"]["incog"], $formulas[$i]["formula"]["formula"]);
+        $verdade = true;
+        while ($verdade):
+    $materia = "json/".$_SESSION["materia"].".json";
+    $caminho_variavel = "json/"."variaveis_".$_SESSION["materia"].".json";
+    $formulas =  buscaEquacao($materia, $dados);
+    $incognitas= '';
+    foreach ($dados as $key => $dado){
+        if ($key == $dado and gettype($dado) == "string"){
+            $incognitas = $key;
+        }
+    }
+    // var_dump($incognitas);
+    $count = count($formulas);
+    // var_dump($formulas);
         $incognita = "";
-        foreach ($formulas[$i]["dados"] as $key => $dado){
+        // var_dump($formulas[0]["dados"]);
+        foreach ($formulas[0]["dados"] as $key => $dado){
             if ($dado == $key){
                 $incognita = $dado;
             }
         }
+        if ($incognita != $incognitas) {
+            $verdade = true;
+        }
+        else{
+            $verdade = false;
+        }
+        $verdade = false;
+        // var_dump($incognita);
+        $resultado = resolveEquacao($formulas[0]["dados"], $formulas[0]["formula"]["incog"], $formulas[0]["formula"]["formula"]);
+        $resultado['passoApasso'] = tira_espaco($resultado['passoApasso']);
+        $count = count($resultado['passoApasso']) -1;
+        // var_dump($resultado['passoApasso'][$count]);
+        $resultado['passoApasso'][$count] = medida($resultado['passoApasso'][$count], $caminho_variavel);
+
     ?>
-        <h4>Para descobrirmos "<?php echo $incognita ?>" usamos a formula dx <?php echo $formulas[$i]["formula"]["nomeFormula"] ?></h4>
+        <h4>Para descobrirmos "<?php echo $incognita ?>" usamos a formula dx <?php echo $formulas[0]["formula"]["nomeFormula"] ?></h4>
         <ul>
             <?php foreach ($resultado['passoApasso'] as $passoApasso): ?>
                 <li style="list-style-type: none"><?php echo $passoApasso ?></li>
             <?php endforeach;
-            if (isset($formulas[$i+1])){
-                foreach ($formulas[$i]["dados"] as $dados1){
-                    foreach ($formulas[$i+1]["dados"] as $dados2){
-                        if ($dados1 == $dados2){
-                            $formulas[$i+1]["dados"][$dados2] = $resultado['resultado'];
+            if (isset($dados)){
+                foreach ($formulas[0]["dados"] as $key => $dados1){
+                    foreach ($dados as  $keydado => $dados2){
+                        if ($dados1 == $key){
+                            $dados[$key] = $resultado['resultado'];
+                            // var_dump($key);
+                            // var_dump($dados[$key]);
+                            // var_dump($dados1);
+                            // var_dump($key);
+                            // var_dump($dados2);
+                            // var_dump($keydado);
+                            // echo ";";
+                            // var_dump($dados[$key]);
+                             // var_dump($resultado['resultado']);
                         }
                     }
                 }
-            }?>
+            }
+            foreach ($formulas[0]["dados"] as $key => $dados1){
+
+                foreach ($dados as  $keydado => $dados2){
+                    if ($dados2 == $keydado){
+                        $verdade = true;
+                        // var_dump($keydado);
+                        // var_dump($dados2);
+                    }
+                }
+            }
+            ?>
         </ul>
-    <?php endfor; ?>
+    <?php endwhile; ?>
     <!-- Button -->
     <div class="form-group">
         <label class="col-md-4 control-label" for="singlebutton">Voltar para o inicio</label>

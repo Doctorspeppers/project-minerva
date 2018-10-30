@@ -1,203 +1,368 @@
 [
   {
-    "categoria" : "velocidade",
-    "nomeFormula": "Velocidade Media",
-    "formula": "v = ( ds / dt )",
-    "incog": ["v", "ds", "dt"]
+    "categoria" : "Grandezas Escalares",
+    "nomeFormula": "Deslocamento Escalar",
+    "formula": "Δs = Sf - S0",
+    "incog": ["Δs", "Sf", "S0"]
   },
-
   {
-    "categoria" :"movimento uniforme",
-    "nomeFormula": "Funcao horaria do deslocamento",
-    "formula": "s = s0 + ( v * dt )",
-    "incog": ["s", "s0", "v", "dt"]
+    "categoria" : "Grandezas Escalares",
+    "nomeFormula": "Tempo Escalar",
+    "formula": "ΔT = Tf - T0",
+    "incog": ["ΔT", "Tf", "T0"]
   },
-
   {
-    "categoria" : "movimento uniformemente variado",
-    "nomeFormula": "Aceleracao media",
-    "formula": "a = ( dv / dt )",
-    "incog": ["a", "dv", "dt"]
-
+    "categoria" : "Grandezas Escalares",
+    "nomeFormula": "Velocidade Escalar",
+    "formula": "ΔV = Vf - V0",
+    "incog": ["ΔV", "Vf", "V0"]
   },
-
   {
-    "categoria" : "movimento uniformemente variado",
-    "nomeFormula": "Funcao horaria da velocidade",
-    "formula": "v = v0 + ( a * t )",
-    "incog": ["v", "v0", "a", "t"]
-
+    "categoria" : "Grandezas Escalares",
+    "nomeFormula": "Deslocamento Vertical Escalar(Altura)",
+    "formula": "Δh = hf - h0",
+    "incog": ["Δh", "hf", "h0"]
   },
-
-
   {
-    "categoria" : "movimento uniformemente variado",
-    "nomeFormula": "Funcao horaria da posicao em fucao do tempo",
-    "formula": "s = s0 + ( v0 * t ) + ( 1/2 * a * pow( t ,2) )",
-    "incog": ["s", "s0", "v0", "t", "a"]
-
+    "categoria" : "Movimento Uniforme",
+    "nomeFormula": "Velocidade Escalar Média",
+    "formula": "ΔV = ( Δs / ΔT )",
+    "incog": ["ΔV", "Δs", "ΔT"]
   },
-
   {
-    "categoria" : "movimento uniformemente variado",
-    "nomeFormula": "Funcao horaria da posicao em fucao do tempo",
-    "formula": "s = s0 + t + ( 1/2 * a * pow( t ,2) )",
-    "incog": ["s", "s0", "t", "a"]
-
+    "categoria" :"Movimento Uniforme",
+    "nomeFormula": "Função Horária do Deslocamento",
+    "formula": "Sf = S0 + ( ΔV * ΔT )",
+    "incog": ["Sf", "S0", "ΔV", "ΔT"]
   },
-
   {
-    "categoria" : "movimento uniformemente variado",
-    "nomeFormula": "Equacao de Torricelli",
-    "formula": "v = pow( pow( v0 ,2) + ( 2 * a * ds ) ,1/2)",
-    "incog": ["v", "v0", "a", "ds"]
-
+    "categoria" : "Movimento Uniformemente Variado",
+    "nomeFormula": "Aceleração Escalar",
+    "formula": "a = ( ΔV / ΔT )",
+    "incog": ["a", "ΔV", "ΔT"]
   },
-
   {
-    "categoria" : "movimento vertical",
-    "nomeFormula": "Funcao horaria da velocidade no movimento vertical",
-    "formula": " v = v0 + ( g * t )",
-    "incog": ["v", "v0", "g", "t"]
-
+    "categoria" : "Movimento Uniformemente Variado",
+    "nomeFormula": "Função Horária da Velocidade",
+    "formula": "Vf = v0 + ( a * ΔT )",
+    "incog": ["Vf", "v0", "a", "ΔT"]
   },
-
   {
-    "categoria" : "movimento vertical",
-    "nomeFormula": "Funcao horaria da posicao em funcao do tempo no movimento vertical",
-    "formula": " h = h0 + ( v0 * t ) + ( 1/2 * g * pow( t ,2) )",
-    "incog": ["h", "h0", "v0", "t", "g"]
-
+    "categoria" : "Movimento Uniformemente Variado",
+    "nomeFormula": "Função Horária de Deslocamento",
+    "formula": "Sf = S0 + (V0 * ΔT) + ( a * pow( ΔT ,2) / 2 )",
+    "incog": ["Sf", "S0", "V0", "a", "ΔT"]
   },
-
   {
-    "categoria" : "movimento vertical",
-    "nomeFormula": "Equacao de Torricelli no movimento vertical",
-    "formula": "v = pow( pow( v0 ,2) + ( 2 * g * dh ) ,1/2)",
-    "incog": ["v", "v0", "g", "dh"]
-
+    "categoria" : "Movimento Uniformemente Variado",
+    "nomeFormula": "Função Horária da Velocidade (Torricelli)",
+    "formula": "Vf  = pow( pow(V0 ,2) + ( 2 * a * Δs ) ,1/2) ",
+    "incog": ["Vf", "Δs", "V0", "a"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "a Posicao Angular",
-    "formula": "ag = ( S / r )",
-    "incog": ["ag", "S", "r"]
-
+    "categoria" :"Lançamento Vertical",
+    "nomeFormula": "Função Horária da Altura",
+    "formula": "hf = ( g * pow(ΔT ,2) / 2)",
+    "incog": ["hf", "g", "ΔT"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "o Deslocamento Angular",
-    "formula": "dag = ( dS / r )",
-    "incog": ["dag", "dS", "r"]
-
+    "categoria" :"Lançamento Vertical",
+    "nomeFormula": "Função Horária da Altura (Torricelli)",
+    "formula": "Vf = pow( pow( 2 * g * Δh ) ,1/2)",
+    "incog": ["Vf", "ΔV", "g", "Δh"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "velocidade angular",
-    "formula": "va = ( dag / t )",
-    "incog": ["va", "dag", "t"]
-
+    "categoria" :"Lançamento Vertical",
+    "nomeFormula": "Função Horária de Altura",
+    "formula": "hf = ( V0 * ΔT ) - ( g * pow( ΔT ,2) / 2 )",
+    "incog": ["hf","V0", "g", "ΔT"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "aceleracao angular",
-    "formula": "aa = ( dvg / t )",
-    "incog": ["aa", "dvg", "t"]
-
+    "categoria" :"Lançamento Vertical",
+    "nomeFormula": "Função Horária de Altura com Altura Inicial",
+    "formula": "hf = h0 + ( V0 * ΔT ) - ( g * pow( ΔT ,2) / 2 )",
+    "incog": ["hf","h0","V0", "g", "ΔT"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "Funcao horaria da posicao angular no movimento circular uniforme",
-    "formula": "ag = ag0 + ( va * t )",
-    "incog": ["ag", "ag0", "va", "t"]
-
+    "categoria" :"Lançamento Vertical",
+    "nomeFormula": "Função Horária de Velocidade",
+    "formula": "Vf = pow( pow( V0,2) - ( 2 * g * ΔT ) ,1/2)",
+    "incog": ["Vf", "V0", "g", "ΔT"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "Funcao horaria da velocidade angular",
-    "formula": "va = va0 + ( aa * t )",
-    "incog": ["va", "va0", "aa", "t"]
-
+    "categoria" :"Vetores",
+    "nomeFormula": "Função Horária de Velocidade",
+    "formula": "Vf = pow( pow( V0,2) - ( 2 * g * ΔT ) ,1/2)",
+    "incog": ["Vf", "V0", "g", "ΔT"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "Funcao horaria da posicao angular",
-    "formula": "ag = ag0 + ( va0 * t ) + ( 1 / 2 * a * pow( t ,2) ) )" ,
-    "incog": ["ag", "ag0", "va0", "t", "a", "t"]
-
+    "categoria" :"Vetores",
+    "nomeFormula": "Adição de Vetores",
+    "formula": "s =  pow( pow( Va,2) + pow( Vb ,2) + ( 2 * va * vb * cos_α ) ,1/2)",
+    "incog": ["s", "va", "vb", "cos_α"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "Equacao de Torricelli para movimento circular",
-    "formula": "va = pow( pow( va0 ,2) + ( 2 * a * dag ) ,1/2)" ,
-    "incog": ["va", "va0", "a", "dag"]
-
+    "categoria" :"Vetores",
+    "nomeFormula": "Subtração de Vetores",
+    "formula": "vd =  pow( pow( Va,2) - pow( Vb ,2) + ( 2 * va * vb * cos_α ) ,1/2)",
+    "incog": ["vd", "va", "vb", "cos_α"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "aceleracao centripeta 1",
-    "formula": "acp = ( pow( v ,2)  / r )" ,
-    "incog": ["acp", "v", "r"]
-
+    "categoria" :"Vetores",
+    "nomeFormula": "Velocidade Vetorial Média",
+    "formula": "Δv = ( Δr / ΔT )",
+    "incog": ["Δv", "Δr", "ΔT"]
   },
-
   {
-    "categoria" : "movimento circular",
-    "nomeFormula": "aceleracao centripeta 2",
-    "formula": "acp = ( pow( va ,2) * r )" ,
-    "incog": ["acp", "va", "r"]
-
+    "categoria" :"Vetores",
+    "nomeFormula": "Aceleração Vetorial Média",
+    "formula": "av = ( Δv / ΔT )",
+    "incog": ["av", "Δv", "ΔT"]
   },
-
-
-
   {
-    "categoria" : "dilataçao dos solidos",
-    "nomeFormula": "dilatacao linear",
-    "formula": "dl =( l0 * cdl * dT ) " ,
-    "incog": ["dl", "l0", "cdl", "dT"]
-
+    "categoria" : "Movimento Circular Uniforme",
+    "nomeFormula": "Frequência",
+    "formula": "f = ( n / T )",
+    "incog": ["f", "n", "T"]
   },
-
   {
-    "categoria" : "dilataçao dos solidos",
-    "nomeFormula": "dilatacao superficial",
-    "formula": "dar = ( ar0 * B * dT )" ,
-    "incog": ["dar", "ar0", "B", "dT"]
-
+    "categoria" : "Movimento Uniformemente Variado Circular",
+    "nomeFormula": "Aceleração Circular(centrípeda)",
+    "formula": "ac = ( pow( Δv,2) / R )",
+    "incog": ["ac", "Δv", "R"]
   },
-
   {
-    "categoria" : "dilataçao dos solidos",
-    "nomeFormula": "coeficiente de dilatacao superficial",
-    "formula": "B = ( 2 * cdl )" ,
-    "incog": ["B", "cdl"]
-
+    "categoria" : "Composição de Movimento",
+    "nomeFormula": "Deslocamento Total",
+    "formula": "dt = dr + da",
+    "incog": ["dt", "dr", "da"]
   },
-
   {
-    "categoria" : "dilataçao dos solidos",
-    "nomeFormula": "dilatacao volumetrica",
-    "formula": "dV =( V0 * y * dT )" ,
-    "incog": ["dV", "V0", "y", "dT"]
-
+    "categoria" : "Composição de Movimento",
+    "nomeFormula": "Velocidade Total",
+    "formula": "vt = vr + va",
+    "incog": ["vt", "vr", "va"]
   },
-
   {
-    "categoria" : "dilataçao dos solidos",
-    "nomeFormula": "coeficiente de dilatacao volumetrica",
-    "formula": "y = ( 3 * cdl )" ,
-    "incog": ["y", "cdl"]
-
+    "categoria" : "Lançamento Horizontal",
+    "nomeFormula": "Tempo de Queda",
+    "formula": "ΔT = pow( ( 2 * Δh / g ) ,1/2)",
+    "incog": ["ΔT", "Δh", "g"]
+  },
+  {
+    "categoria" : "Lançamento Horizontal",
+    "nomeFormula": "Alcance do Corpo",
+    "formula": "D = V0 * pow( (2 * Δh / g ) ,1/2)",
+    "incog": ["D","V0","Δh", "g"]
+  },
+  {
+    "categoria" : "Lançamento Horizontal",
+    "nomeFormula": "Alcance do Corpo Máximo",
+    "formula": "Dm = pow( V0 ,2) / g",
+    "incog": [ "Dm", "V0", "g"]
+  },
+  {
+    "categoria" : "Leis de Newton",
+    "nomeFormula": "Força Resultante",
+    "formula": "F = F1 + F2",
+    "incog": ["F", "F1", "F2"]
+  },
+  {
+    "categoria" : "Leis de Newton",
+    "nomeFormula": "2° Lei de Newton(Princípio Fundamental da Dinâmica)",
+    "formula": "F = ( m * a )",
+    "incog": ["F", "m", "a"]
+  },
+  {
+    "categoria" : "Interação Mecânica",
+    "nomeFormula": "Força de Campo Gravitacional",
+    "formula": "P = ( m * g )",
+    "incog": ["P", "m", "g"]
+  },
+  {
+    "categoria" : "Interação Mecânica",
+    "nomeFormula": "Força Normal",
+    "formula": "N = P",
+    "incog": ["N", "P"]
+  },
+  {
+    "categoria" : "Interação Mecânica",
+    "nomeFormula": "Força de Elasticidade",
+    "formula": "F = ( K * x )",
+    "incog": ["F", "K", "x"]
+  },
+  {
+    "categoria" : "Atrito",
+    "nomeFormula": "Força de Atrito Estático",
+    "formula": "Fae = ( µe * N )",
+    "incog": ["Fae", "µe", "N"]
+  },
+  {
+   "categoria" : "Atrito",
+    "nomeFormula": "Força de Atrito Dinâmico",
+    "formula": "Fad = ( µc * N )",
+    "incog": ["Fad", "µc", "N"]
+  },
+  {
+    "categoria" : "Força Circular",
+    "nomeFormula": "Força Centrípeta",
+    "formula": "Fc = ( m * ac )",
+    "incog": ["Fc", "m", "ac"]
+  },
+  {
+    "categoria" : "Força Circular",
+    "nomeFormula": "Força Normal",
+    "formula": "N = ( m * ( g + ac ) )",
+    "incog": ["N", "m", "g"]
+  },
+  {
+    "categoria" : "Atrito",
+    "nomeFormula": "Velocidade Máxima de Atrito Circular",
+    "formula": "ΔV = pow( µe * R * g ,1/2)",
+    "incog": ["ΔV", "µe", "R", "g"]
+  },
+  {
+    "categoria" : "Trabalho",
+    "nomeFormula": "Trabalho",
+    "formula": "τ = ( F * Δs )",
+    "incog": ["τ", "F", "Δs"]
+  },
+  {
+    "categoria" : "Trabalho",
+    "nomeFormula": "Trabalho por Força Peso",
+    "formula": "τ = ( P * Δh )",
+    "incog": ["τ", "P", "Δh"]
+  },
+  {
+    "categoria" : "Trabalho",
+    "nomeFormula": "Potência Média",
+    "formula": "Pm = ( τ / ΔT )",
+    "incog": ["Pm", "τ", "ΔT"]
+  },
+  {
+    "categoria" : "Trabalho",
+    "nomeFormula": "Potência Média",
+    "formula": "Pm = ( F / ΔV )",
+    "incog": ["Pm", "F", "ΔV"]
+  },
+  {
+    "categoria" : "Trabalho",
+    "nomeFormula": "Trabalho Elástico",
+    "formula": "τe = ( K * pow( x ,2) ) / 2",
+    "incog": ["τe", "K", "x"]
+  },
+  {
+    "categoria" : "Energia",
+    "nomeFormula": "Energia Média",
+    "formula": "E = ( Pm * ΔT )",
+    "incog": ["E", "Pm", "ΔT"]
+  },
+  {
+    "categoria" : "Energia",
+    "nomeFormula": "Energia Cinética",
+    "formula": "Ec = ( m * pow( ΔV ,2) ) / 2",
+    "incog": ["Ec", "m", "ΔV"]
+  },
+  {
+    "categoria" : "Energia",
+    "nomeFormula": "Energia Potencial Gravitacional",
+    "formula": "Epg = ( m * g * h )",
+    "incog": ["Epg", "m", "g", "h"]
+  },
+  {
+    "categoria" : "Energia",
+    "nomeFormula": "Energia Potencial Elástica",
+    "formula": "Epe = ( ( K * pow( x ,2) ) / 2 )",
+    "incog": ["Epe", "K", "x"]
+  },
+  {
+    "categoria" : "Energia",
+    "nomeFormula": "Energia Mecânica",
+    "formula": "Em = Ec + Ep",
+    "incog": ["Em", "Ec", "Ep"]
+  },
+  {
+    "categoria" : "Energia",
+    "nomeFormula": "Energia Potencial",
+    "formula": "Ep = Epg + Epe",
+    "incog": ["Ep", "Epg", "Epe"]
+  },
+  {
+    "categoria" : "Trabalho",
+    "nomeFormula": "Trabalho da Força de Atrito",
+    "formula": "τfa = Emf - Emi",
+    "incog": ["τfa", "Emf", "Emi"]
+  },
+  {
+    "categoria" : "Impulso e Quantidade de Movimento",
+    "nomeFormula": "Impulso",
+    "formula": "I = ( F * ΔT )",
+    "incog": ["I", "F", "ΔT"]
+  },
+  {
+    "categoria" : "Impulso e Quantidade de Movimento",
+    "nomeFormula": "Quantidade de Movimento",
+    "formula": "Q = ( m * ΔV )",
+    "incog": ["Q", "m", "ΔV"]
+  },
+  {
+    "categoria" : "Impulso e Quantidade de Movimento",
+    "nomeFormula": "Impulso da Variação de Quantidade de Movimento",
+    "formula": "I = Q - Q0",
+    "incog": ["I", "Q", "Q0"]
+  },
+  {
+    "categoria" : "Colisões",
+    "nomeFormula": "Coeficiente de Restituição",
+    "formula": "e = ( vaf / vap ) )",
+    "incog": ["e", "vaf", "vap"]
+  },
+  {
+    "categoria" : "Equilíbrio de um Corpo Extenso",
+    "nomeFormula": "Momento de uma Força(Torque)",
+    "formula": "M = ( F * Δs )",
+    "incog": ["M", "F", "Δs"]
+  },
+  {
+    "categoria" : "Máquinas Simples",
+    "nomeFormula": "Alavanca",
+    "formula": "R = ( Ff * ( df / dr ) )",
+    "incog": ["R", "Ff", "df","dr"]
+  },
+  {
+    "categoria" : "Densidade e Pressão",
+    "nomeFormula": "Densidade",
+    "formula": "d = ( m / V )",
+    "incog": ["d", "m", "V"]
+  },
+  {
+    "categoria" : "Densidade e Pressão",
+    "nomeFormula": "Pressão",
+    "formula": "p = ( F / A )",
+    "incog": ["p", "F", "A"]
+  },
+  {
+    "categoria" : "Densidade e Pressão",
+    "nomeFormula": "Lei de Stevin",
+    "formula": "pab =  pat + ( d * g * h )",
+    "incog": ["pab", "pat", "d", "g", "h"]
+  },
+  {
+    "categoria" : "Densidade e Pressão",
+    "nomeFormula": "Princípio de Pascal",
+    "formula": "F1 = ( ( F2 / A2 ) * A1 )",
+    "incog": ["F1", "A1", "F2", "A2"]
+  },
+  {
+    "categoria" : "Flutuação",
+    "nomeFormula": "Princípio de Arquimedes",
+    "formula": "Emp = F2 - F1",
+    "incog": ["Emp", "F2", "F1"]
+  },
+  {
+    "categoria" : "Flutuação",
+    "nomeFormula": "Princípio de Arquimedes",
+    "formula": "Emp = dl * g * Vl",
+    "incog": ["Emp", "dl", "g", "Vl"]
   }
-
 ]

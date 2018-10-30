@@ -6,11 +6,10 @@
 <form class="form-horizontal" action="conta.php?acao=dados" method="post">
     <fieldset>
         <!-- Form Name -->
-        <legend style="color: white">ShowCrazy</legend>
+        <legend style="color: white">Escolha as variáveis presente em seu exercício:</legend>
         <!-- Multiple Checkboxes -->
         <div class="form-group">
-            <label class="col-md-3 control-label" for="checkboxes">Escolha as variaveis:</label>
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <?php foreach($variaveis as $key => $variavel):?>
                     <div class="col-md-6">
                         <div class="checkbox">

@@ -1,0 +1,422 @@
+{
+  "ΔV": {
+    "nome": "Velocidade",
+    "mascara": "ΔV",
+    "unidade":"Metro(s) por Segundo"
+  },
+  "Vf": {
+    "nome": "Velocidade Final",
+    "mascara": "Vf",
+    "unidade":"Metro(s) por Segundo"
+  },
+  "V0": {
+    "nome": "Velocidade Inicial",
+    "mascara": "V0",
+    "unidade":"Metro(s) por Segundo"
+  },
+  "Δs": {
+    "nome": "Deslocamento Escalar",
+    "mascara": "Δs",
+    "unidade":"Metro(s)"
+  },
+  "Sf": {
+    "nome": "Deslocamento Final",
+    "mascara": "Sf",
+    "unidade":"Metro(s)"
+  },
+  "S0": {
+    "nome": "Deslocamento Inicial",
+    "mascara": "S0",
+    "unidade":"Metro(s)"
+  },
+  "ΔT": {
+    "nome": "Tempo Escalar",
+    "mascara": "ΔT",
+    "unidade":"Segundo(s)"
+  },
+  "Tf": {
+    "nome": "Tempo Final",
+    "mascara": "Tf",
+    "unidade":"Segundo(s)"
+  },
+  "T0": {
+    "nome": "Tempo Inicial",
+    "mascara": "T0",
+    "unidade":"Segundo(s)"
+  },
+  "a": {
+    "nome": "Aceleração Escalar",
+    "mascara": "a",
+    "unidade":"Metro(s) por Segundo ao quadrado"
+  },
+  "g": {
+    "nome": "Aceleração Gravitacional",
+    "mascara": "g",
+    "unidade":"Metro(s) por Segundo ao quadrado"
+  },
+  "Δh": {
+    "nome": "Altura Escalar",
+    "mascara": "Δh",
+    "unidade":"Metro(s)"
+  },
+  "hf": {
+    "nome": "Altura Final",
+    "mascara": "hf",
+    "unidade":"Metro(s)"
+  },
+  "s": {
+    "nome": "Vetor Soma",
+    "mascara": "s",
+    "unidade":"Metro(s)"
+  },
+  "vd": {
+    "nome": "Vetor Subtração",
+    "mascara": "vd",
+    "unidade":"Metro(s)"
+  },
+  "va": {
+    "nome": "Vetor a",
+    "mascara": "va",
+    "unidade":"Metro(s)"
+  },
+  "vb": {
+    "nome": "Vetor b",
+    "mascara": "vb",
+    "unidade":"Metro(s)"
+  },
+  "cos_α": {
+    "nome": "Cosseno de α",
+    "mascara": "cos_α",
+    "unidade":""
+  },
+  "sen_a": {
+    "nome": "Seno de a",
+    "mascara": "sen_a",
+    "unidade":""
+  },
+    "Δv": {
+    "nome": "Velocidade Vetorial Média",
+    "mascara": "Δv",
+    "unidade":"Metro(s) por Segundo"
+  },
+  "Δr": {
+    "nome": "Deslocamento Vetorial",
+    "mascara": "Δr",
+    "unidade":"Metro(s)"
+  },
+  "av": {
+    "nome": "Aceleração Vetorial Média",
+    "mascara": "av",
+    "unidade":"Metro(s) por Segundo ao quadrado"
+  },
+  "f": {
+    "nome": "Frequência",
+    "mascara": "f",
+    "unidade":"Hert(s)"
+  },
+  "n": {
+    "nome": "Número de Voltas",
+    "mascara": "n",
+    "unidade":"Voltas"
+  },
+  "T": {
+    "nome": "Período",
+    "mascara": "T",
+    "unidade":"Segundo(s)"
+  },
+  "ac": {
+    "nome": "Aceleração Centrípeta",
+    "mascara": "ac",
+    "unidade":"Metro(s) por Segundo ao quadrado"
+  },
+  "R": {
+    "nome": "Raio de Circunferência",
+    "mascara": "R",
+    "unidade":"Metro(s)"
+  },
+    "dt": {
+    "nome": "Deslocamento Total",
+    "mascara": "dt",
+    "unidade":"Metro(s)"
+  },
+    "dr": {
+    "nome": "Deslocamento Relativo",
+    "mascara": "dr",
+    "unidade":"Metro(s)"
+  },
+    "va": {
+    "nome": "Velocidade de Arrastamento",
+    "mascara": "va",
+    "unidade":"Metro(s) por Segundo"
+  },
+    "vt": {
+    "nome": "Velocidade Total",
+    "mascara": "vt",
+    "unidade":"Metro(s) por Segundo"
+  },
+    "vr": {
+    "nome": "Velocidade Relativo",
+    "mascara": "vr",
+    "unidade":"Metro(s) por Segundo"
+  },
+    "va": {
+    "nome": "Velocidade de Arrastamento",
+    "mascara": "va",
+    "unidade":"Metro(s) por Segundo"
+  },
+    "D": {
+    "nome": "Alcance",
+    "mascara": "D",
+    "unidade":"Metro(s)"
+  },
+    "Dm": {
+    "nome": "Alcance Máximo",
+    "mascara": "Dm",
+    "unidade":"Metro(s)"
+  },
+    "F": {
+    "nome": "Força",
+    "mascara": "F",
+    "unidade":"Newton(s)"
+  },
+    "F1": {
+    "nome": "Força 1",
+    "mascara": "F1",
+    "unidade":"Newton(s)"
+  },
+    "F2": {
+    "nome": "Força 2",
+    "mascara": "F2",
+    "unidade":"Newton(s)"
+  },
+    "m": {
+    "nome": "Massa",
+    "mascara": "m",
+    "unidade":"Quilo(s)"
+  },
+   "P": {
+    "nome": "Força Peso",
+    "mascara": "P",
+    "unidade":"Newton(s)"
+  },
+   "K": {
+    "nome": "Costante Elástica",
+    "mascara": "K",
+    "unidade":""
+  },
+   "x": {
+    "nome": "Deformação da Mola",
+    "mascara": "x",
+    "unidade":"Metro(s)"
+  },
+   "µe": {
+    "nome": "Coeficiente de Atrito Estático",
+    "mascara": "µe",
+    "unidade":""
+  },
+   "µc": {
+    "nome": "Coeficiente de Atrito Cinético",
+    "mascara": "µc",
+    "unidade":""
+  },
+  "Fae": {
+    "nome": "Força de Atrito Estático",
+    "mascara": "Fae",
+    "unidade":"Newton(s)"
+  },
+  "Fad": {
+    "nome": "Força de Atrito Dinâmico",
+    "mascara": "Fad",
+    "unidade":"Newton(s)"
+  },
+  "N": {
+    "nome": "Força Normal",
+    "mascara": "N",
+    "unidade":"Newton(s)"
+  },
+   "Fc": {
+    "nome": "Força Resultante Centrípeta",
+    "mascara": "Fc",
+    "unidade":"Newton(s)"
+  },
+   "τ": {
+    "nome": "Trabalho",
+    "mascara": "τ",
+    "unidade":"Joule(s)"
+  },
+   "Pm": {
+    "nome": "Potência Média",
+    "mascara": "Pm",
+    "unidade":"Watts"
+  },
+  "τe": {
+    "nome": "Trabalho Elástico",
+    "mascara": "τe",
+    "unidade":"Joule(s)"
+  },
+  "E": {
+    "nome": "Energia",
+    "mascara": "E",
+    "unidade":"Joule(s)"
+  },
+  "Ec": {
+    "nome": "Energia Cinética",
+    "mascara": "Ec",
+    "unidade":"Joule(s)"
+  },
+  "Epg": {
+    "nome": "Energia Potencial Gravitacional",
+    "mascara": "Epg",
+    "unidade":"Joule(s)"
+  },
+  "Epe": {
+    "nome": "Energia Potencial Elástica",
+    "mascara": "Epe",
+    "unidade":"Joule(s)"
+  },
+  "Em": {
+    "nome": "Energia Mecânica",
+    "mascara": "Em",
+    "unidade":"Joule(s)"
+  },
+  "Ep": {
+    "nome": "Energia Potencial",
+    "mascara": "Ep",
+    "unidade":"Joule(s)"
+  },
+  "τfa": {
+    "nome": "Trabalho de Força de Atrito",
+    "mascara": "τfa",
+    "unidade":"Joule(s)"
+  },
+  "Emf": {
+    "nome": "Energia Mecânica Final",
+    "mascara": "Emf",
+    "unidade":"Joule(s)"
+  },
+  "Emi": {
+    "nome": "Energia Mecânica Inicial",
+    "mascara": "Emi",
+    "unidade":"Joule(s)"
+  },
+  "I": {
+    "nome": "Impulso de uma Força",
+    "mascara": "I",
+    "unidade":""
+  },
+  "Q": {
+    "nome": "Quantidade de Movimento",
+    "mascara": "Q",
+    "unidade":""
+  },
+  "Q0": {
+    "nome": "Quantidade de Movimento Inicial ",
+    "mascara": "Q0",
+    "unidade":""
+  },
+  "e": {
+    "nome": "Coeficiente de Restituição",
+    "mascara": "e",
+    "unidade":""
+  },
+  "vaf": {
+    "nome": "Velocidade de afastamento",
+    "mascara": "vaf",
+    "unidade":"Metro(s) por Segundo"
+  },
+  "vap": {
+    "nome": "Velocidade de Aproximação",
+    "mascara": "vap",
+    "unidade":"Metro(s) por Segundo"
+  },
+   "M": {
+    "nome": "Momento de uma Força",
+    "mascara": "M",
+    "unidade":"Segundo(s)"
+  },
+   "df": {
+    "nome": "Distância da Força Aplicada(ação)",
+    "mascara": "df",
+    "unidade":"Metro(s)"
+  },
+   "Fr": {
+    "nome": "Força Resistente",
+    "mascara": "Fr",
+    "unidade":"Newton(s)"
+  },
+   "Ff": {
+    "nome": "Força Potente",
+    "mascara": "Ff",
+    "unidade":"Newton(s)"
+  },
+   "dr": {
+    "nome": "Distância da Força Resistente",
+    "mascara": "dr",
+    "unidade":"Metro(s)"
+  },
+   "d": {
+    "nome": "Densidade",
+    "mascara": "d",
+    "unidade":"Quilo(s) por Litro"
+  },
+   "V": {
+    "nome": "Volume",
+    "mascara": "V",
+    "unidade":"Litro(s)"
+  },
+   "p": {
+    "nome": "Pressão",
+    "mascara": "p",
+    "unidade":"Newton(s) por Metro(s) ao quadrado"
+  },
+   "A": {
+    "nome": "Área",
+    "mascara": "A",
+    "unidade":"Metro(s) ao quadrado"
+  },
+   "pab": {
+    "nome": "Pressão Absoluta",
+    "mascara": "pab",
+    "unidade":"atm"
+  },
+   "pat": {
+    "nome": "Pressão Atmosférica",
+    "mascara": "pat",
+    "unidade":"atm"
+  },
+  "F1": {
+    "nome": "Força 1",
+    "mascara": "F1",
+    "unidade":"Newton(s)"
+  },
+  "A1": {
+    "nome": "Área 1",
+    "mascara": "A1",
+    "unidade":"Metro(s) ao quadrado"
+  },
+  "F2": {
+    "nome": "Força 2",
+    "mascara": "F2",
+    "unidade":"Newton(s)"
+  },
+  "A2": {
+    "nome": "Área 2",
+    "mascara": "A2",
+    "unidade":"Metro(s) ao quadrado"
+  },
+  "Emp": {
+    "nome": "Empuxo",
+    "mascara": "Emp",
+    "unidade":"Newton(s)"
+  },
+  "dl": {
+    "nome": "Densidade do Líquido",
+    "mascara": "dl",
+    "unidade":"Quilo(s) por Litro"
+  },
+  "Vl": {
+    "nome": "Volume do Líquido",
+    "mascara": "Vl",
+    "unidade":"Litro(s)"
+  }
+}
