@@ -2,63 +2,6 @@
 
 /**  ----  Funcoes matematica   ----  */
 
-/**
- * @param $a
- * @param $b
- * @param $c
- * @return array
- */
-function bhaskara($a, $b, $c){
-    $passoApasso = [];
-
-    $delta = pow( $b,2) - 4 * $a * $c;
-    @eval('$delta =' . $delta . ';');
-
-    $equacao["x1"] = "( - $b + pow($delta,1/2) ) / (2 * $a)";
-    @eval('$equacao["x1"] = (float)' . $equacao["x1"] . ';');
-
-    $equacao["x2"] = "( - $b - pow($delta,1/2) ) / (2 * $a)";
-    @eval('$equacao["x2"] = (float)' . $equacao["x2"] . ';');
-
-    $passoApasso[] = 'x = ( - b +/- ²√Δ ) / 2 * a';
-    $passoApasso[] = 'Δ = b² - 4 * a * c';
-    $passoApasso[] = 'Δ = ' . $b . '- 4 * ' . $a . ' * ' . $c;
-    $passoApasso[] = 'Δ = ' . $delta;
-    $passoApasso[] = 'x = ( - ' . $b . ' +/- ²√' . $delta . ' ) / 2 *' . $a;
-    $raizDelta =  (float) pow($delta, 1/2);
-    $passoApasso[] = 'x = ( - ' . $b . ' +/- ' . $raizDelta . ' ) / ' . 2 * $a;
-    $passoApasso[] = 'x\' = ( - ' . $b . ' + ' . $raizDelta . ' ) / ' . 2 * $a;
-    $passoApasso[] = 'x\' = ' . $equacao['x1'];
-    $passoApasso[] = 'x\'\' = ( - ' . $b . ' - ' . $raizDelta . ' ) / ' . 2 * $a;
-    $passoApasso[] = 'x\'\' = ' . $equacao['x2'];
-
-    if ($delta < 0 and $a < 0) {
-        $sinal = "A função é sempre negativa!";
-
-    }elseif ($delta < 0 and $a > 0) {
-        $sinal = "A função é sempre negativa!";
-
-    }elseif ($delta > 0 and $a < 0) {
-        $sinal = "[-∞, " . $equacao['x1'] . " ]U[ " . $equacao['x2'] . " , ∞] a Função é negativa!; [ " . $equacao['x1'] . " , " . $equacao['x2'] . " ] a Função é positiva!";
-
-    } else {
-        $sinal = "[-∞, " . $equacao['x1'] . " ]U[ " . $equacao['x2'] . ", ∞] a Função é positiva!; [ " . $equacao['x1'] . " , " . $equacao['x2'] . " ] a Função é negativa!";
-
-    }
-
-    $x = -($b / 2*$a);
-    $y = -($delta)/4*$a;
-
-    $vertice =  "[ $x , $y ]";
-
-    $resposta = [
-        "passoApasso" => $passoApasso,
-        "sinal"       => $sinal,
-        "vertice"    =>  $vertice
-    ];
-
-    return $resposta;
-}
 
 /**
  * @param $a
@@ -223,6 +166,8 @@ function calculaDeterminante($matriz)
 
 /**  ----  Funcoes funcionamento   ----  */
 
+
+//Necessecita de refatoração e otimização
 /**
  * @param array $equacao
  * @return string
@@ -231,10 +176,10 @@ function passoApasso(array $equacao){
     $operacoes           = ["+", "-", "/", "*", ",1/2)", ",2)", "pow("];
     $operacoesMascaradas = ["+", "-", "÷", "x", ")¹/²", ")²", "("];
 
-    $passoApasso = '';
-    $count = count($equacao) -1;
-    $d = 0;
-    $explode = "";
+    $passoApasso = ''; //Desnecessario
+    $count = count($equacao) -1; //Por que menos 1?
+    $d = 0; // Desnecessario
+    $explode = ""; //Desnecessario
     foreach ($equacao as $equa){
         $explode = $explode.' '.$equa;
     }
@@ -257,7 +202,7 @@ function passoApasso(array $equacao){
     }
     return $passoApasso;
 }
-
+//Refatorar e dividir em varias funções separadas 
 /**
  * @param array $dados
  * @param array $incognitas
@@ -333,7 +278,7 @@ function resolveEquacao(array $dados, array $incognitas, $formula){
             }
         }
     } //Separa os dois lados da equacao, verica a posição do igual e da incognita
-
+        //Poderia ser uma função separada.Doctor
     $primeiroPow = true;
     foreach ($equacao as $key => $eq){
         if ($eq == 'pow(' and $primeiroPow){
@@ -383,6 +328,7 @@ function resolveEquacao(array $dados, array $incognitas, $formula){
                 }
             }
         } //Pow
+        //Separar em duas funções, resolve sem incognita e pow
 
         $verificaAlocarLado0 = true;
         $equacaoNova = [];
@@ -441,6 +387,7 @@ function resolveEquacao(array $dados, array $incognitas, $formula){
                 }
             }
         } //Separa e resolve os termos
+        //Função de simplificação
         if ($verificaAlocarTermo){
             if ($termoIncognita != $i -1){
                 @eval('$termoResolvido =' . $termo[$i-1] . ';');
@@ -459,7 +406,7 @@ function resolveEquacao(array $dados, array $incognitas, $formula){
                 
             }
         } //Faz parte ^
-
+        //????
         $equacao = $novaEquacao;
         $passoApasso[] = passoApasso($equacao);
         if (isset($termo[$termoIncognita])){
@@ -554,7 +501,7 @@ function resolveEquacao(array $dados, array $incognitas, $formula){
                     }
 
                 }
-
+                //Função divisão
                 $primeiroPow = true;
                 unset($posicaoPow);
                 foreach ($equacao as $key => $eq){
@@ -703,8 +650,9 @@ function resolveEquacao(array $dados, array $incognitas, $formula){
     $final['passoApasso'] = array_unique($final['passoApasso']);
     $final['passoApasso'] = array_unique($final['passoApasso']);
     return $final;
-}
 
+}
+//Descobrir o que isso aqui faz
 /**
  * @param array $formulasComIncognitas
  * @param array $dados
@@ -738,7 +686,7 @@ function pontua(array $formulasComIncognitas, array $dados, $apenasCompletas){
         "verificaFormula" => $verificaFormula // Per3s
     ];
 }
-
+//Otimizar
 /**
  * @param $caminho
  * @param array $dados
@@ -841,7 +789,7 @@ function buscaEquacao($caminho, array $dados){
 
     return $resultadoFinal;
 }
-
+//Otimizar
 /**
  * @param $caminho
  * @return array
@@ -880,7 +828,7 @@ function buscaVariaveis($caminho, $materia){
 
     return $variaveisNovas;
 }
-
+//Proposito?
 /**
  * @param $variaveis
  * @param $escolhidas
@@ -899,7 +847,7 @@ function arrumaVariaveis($variaveis, $escolhidas){
 
     return $mascaradas;
 }
-
+//Mudar para padrão MVC
 /**
  * @param $acao
  * @param $caminho
@@ -926,6 +874,7 @@ function rotas($acao){
         }
     }
 }
+//Rever 
 function medida ($incognita_formula, $caminho_variavel){
     $incognita = explode(" ", $incognita_formula);
     // var_dump($incognita);
